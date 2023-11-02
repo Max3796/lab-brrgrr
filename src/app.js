@@ -74,9 +74,9 @@ function renderOnions() {
   //you can also use getElementById
   if (state.Onions) {
     onion.style.display = "block";
-  } 
-  else {
+  }else {
     onion.style.display = "none";
+
 }
 }
 
@@ -86,8 +86,7 @@ function renderLettuce() {
   //you can also use getElementById
   if (state.Lettuce) {
     lettuce.style.display = "block";
-  } 
-  else {
+  }else{
     lettuce.style.display = "none";
 }
 }
@@ -95,18 +94,21 @@ function renderLettuce() {
 document.querySelector(".btn-patty").onclick = function () {
   state.Patty = !state.Patty;
   renderAll();
+
 };
 
 // Trial 2 - Setup event listener for the cheese button
 document.querySelector(".btn-cheese").onclick = function () {
   state.Cheese = !state.Cheese;
   renderAll();
+
 };
 
 // Trial 2 - Setup event listener for the tomatoes button
 document.querySelector(".btn-tomatoes ").onclick = function () {
   state.Tomatoes = !state.Tomatoes;
   renderAll();
+
 };
 
 
@@ -114,6 +116,8 @@ document.querySelector(".btn-tomatoes ").onclick = function () {
 document.querySelector(".btn-onions").onclick = function () {
   state.Onions = !state.Onions;
   renderAll();
+
+
 };
 
 
